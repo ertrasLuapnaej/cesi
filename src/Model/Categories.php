@@ -45,7 +45,7 @@ class Categories {
             $objcategorie->seticone($_POST["Description"]);
             $objcategorie->setId($id);
             //Exécuter la mise à jour
-            $objcategorie->SqlUpdate(BDD::getInstance());/*  */
+            $objcategorie->SqlUpdate(BDD::getInstance());
             // Redirection
             header("Location:/Categories/show/$id");
         }else{
