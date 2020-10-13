@@ -2,9 +2,14 @@
 
 {% block body %}
     <h1>Détail de l'article</h1>
+    <h3>{{categorie.libelle}} description ici merci </h3>
     <p>{{ article.Titre }}</p>
     <p>{{ article.Description }}</p>
     <p>{{ article.Auteur }}</p>
     <p><a href="/article/update/{{ article.Id }}"> Modifier ce super Article </a></p>
     <p><a href="/article/delete/{{ article.Id }}"> Supprimer ce super Article </a></p>
+
+{{ dump(_POST) }}
+
 {% endblock %}
+

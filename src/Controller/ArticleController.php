@@ -2,6 +2,7 @@
 namespace src\Controller;
 
 use src\Model\Article;
+use src\Model\Categories;
 use src\Model\BDD;
 
 class ArticleController extends AbstractController {

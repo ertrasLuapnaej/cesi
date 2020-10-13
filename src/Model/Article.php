@@ -1,7 +1,6 @@
 <?php
 namespace src\Model;
 
-//puis-je commit ? 
 
 
 class Article {
@@ -98,6 +97,10 @@ class Article {
         $requete = $bdd->prepare("TRUNCATE TABLE articles");
         $requete->execute();
     }
+
+
+
+    
     /**
      * @return mixed
      */
